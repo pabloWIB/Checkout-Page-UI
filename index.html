@@ -1,138 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/normalize.css">
-	<link rel="stylesheet" href="CSS/styles.css">
-	<link rel="stylesheet" href="CSS/fonts.css">
-	<link rel="icon" type="image/x-icon" href="IMG/favicon.png">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.slim.min.js"></script>
-	<script src="JS/script.js"></script>
-	<title>Checkout Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Built by Pablo Nieto Pérez — wib.digital
+       Need changes or a new build? https://www.fiverr.com/pablonietop -->
+  <meta name="author" content="Pablo Nieto Pérez — wib.digital">
+  <link rel="author" href="https://www.fiverr.com/pablonietop">
+
+  <title>Checkout — Contact, shipping and order summary demo</title>
+  <meta name="description" content="A front-end checkout screen: contact details, shipping address and a live order summary with working quantity steppers and inline form validation. No backend.">
+  <link rel="canonical" href="https://checkout.wib.digital/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://checkout.wib.digital/">
+  <meta property="og:title" content="Checkout — Contact, shipping and order summary demo">
+  <meta property="og:description" content="A front-end checkout screen: contact details, shipping address and a live order summary with working quantity steppers and inline form validation. No backend.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/icons/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/modules/cart.js" defer></script>
+  <script src="assets/js/modules/checkout-form.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pablo Nieto Pérez",
+    "url": "https://wib.digital",
+    "jobTitle": "Web Designer and Developer",
+    "sameAs": [
+      "https://www.fiverr.com/pablonietop",
+      "https://www.linkedin.com/in/pablo-nieto-perez-39a530292"
+    ]
+  }
+  </script>
 </head>
-<body><br><br>																						  		 									
-	<div class="container">
-		<div class="main">
-			<h1>Checkout</h1>
-			<h2>Contact infomation</h2>
- 			<form action="#" method="get">
- 				<label for="get-email">E-mail</label>												  		  	
- 				<div class="inputs-container">
- 					<input  type="image" src="IMG/mail.svg" class="image-input">
- 					<input id="get-email" placeholder="Enter your email..." type="#" class="input-getdata">
- 				</div>
- 				<label for="get-Phone">Phone</label>												  		  	
- 				<div class="inputs-container">
- 					<input  type="image" src="IMG/call.svg" class="image-input">
- 					<input id="get-Phone" placeholder="Enter your phone..." type="#" class="input-getdata">
- 				</div><br><br>
- 				<h2>Shipping address</h2>
- 				<label for="get-name">Full Name</label>												  		  	
- 				<div class="inputs-container">
- 					<input  type="image" src="IMG/account.svg" class="image-input">
- 					<input id="get-name" placeholder="Enter your name..." type="#" class="input-getdata">
- 				</div>
- 				<label for="get-addres">Addres</label>												  		  	
- 				<div class="inputs-container">
- 					<input  type="image" src="IMG/home.svg" class="image-input">
- 					<input id="get-addres" placeholder="Your address.." type="#" class="input-getdata">
- 				</div>
- 				<label for="get-city">City</label>												  		  	
- 				<div class="inputs-container">
- 					<input  type="image" src="IMG/location.svg" class="image-input">
- 					<input id="get-city" placeholder="Your city.." type="#" class="input-getdata">
- 				</div>
- 				<div class="country-postal">
- 					<div>
-		 				<label for="get-country">Country</label>												  		  	
-		 				<div class="inputs-country-postal">
-		 					<input  type="image" src="IMG/globe.svg" class="image-input">
-		 					<input id="get-country" placeholder="Your country.." type="#" class="input-getdata">
-		 				</div>
-		 			</div>
-		 			<div>
-		 				<label for="get-code">Postal code</label>												  		  	
-			 			<div class="inputs-country-postal">
-			 				<input  type="image" src="IMG/postal.svg" class="image-input">
-			 				<input id="get-code" placeholder="Your postal code.." type="#" class="input-getdata">
-			 				</div>
-		 			</div>
-	 			</div>
-				<br>
-				<div class="checkbox-class">
-					<input id="checkbox" type="checkbox">
-					<label for="checkbox">Save this information for next time</label>
-				</div>
-				<br>
-				<div class="submit-info">
-					<input type="submit" placeholder="Continue">
-				</div>
-			</form>
-		</div>
-		<div class="second-checkout">
-			<h2>Checkout</h2>
-		</div>
-		<div class="main2">
-			<div class="products">
-				<div class="products-img">
-					<img src="IMG/photo1.png" alt="">
-				</div>
-				<div class="products-specification">
-					<h3>Vintage Backbag</h3>
-					<div class="products-pricing">
-						<p><span>$54.99</span></p>
-					    <p>$94.99</p>
-				</div>
-				<div class="chose-quantity">
-					<div><img src="IMG/plus.svg" alt=""></div>
-					<div><p>1</p></div>
-					<div><img src="IMG/minus.svg" alt=""></div>
-				</div>
-			</div>
-			<div class="products">
-				<div class="products-img">
-					<img src="IMG/photo2.png" alt="">
-				</div>
-				<div class="products-specification">
-					<h3>Vintage Backbag</h3>
-					<div class="products-pricing">
-						<p><span>$54.99</span></p>
-					    <p>$94.99</p>
-				</div>
-				<div class="chose-quantity">
-					<div><img src="IMG/plus.svg" alt=""></div>
-					<div><p>1</p></div>
-					<div><img src="IMG/minus.svg" alt=""></div>
-				</div>
-			</div>
-			<div class="pricing">
-				<div class="pricing-description">
-					<div>
-						<p>Shipping</p>
-					</div>
-					<div>
-						<p>$19</p>
-					</div>
-				</div>
-				<div class="pricing-description">
-					<div>
-						<p>
-							Total
-						</p>
-					</div>
-					<div>
-						<p>
-							$148.98
-						</p>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-	
+
+<body>
+  <a class="skip-link" href="#checkout-form">Skip to the checkout form</a>
+
+  <!-- Icon sprite. Inlined so the field icons cost no extra requests and can
+       inherit their colour from the control they sit in. -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-mail" viewBox="0 96 960 960">
+        <path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140 371v465h680V371L480 594Zm0-60 336-218H145l335 218ZM140 371v-55 520-465Z"/>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 96 960 960">
+        <path d="M795 936q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z"/>
+      </symbol>
+      <symbol id="icon-user" viewBox="0 96 960 960">
+        <path d="M222 801q63-44 125-67.5T480 710q71 0 133.5 23.5T739 801q44-54 62.5-109T820 576q0-145-97.5-242.5T480 236q-145 0-242.5 97.5T140 576q0 61 19 116t63 109Zm257.814-195Q422 606 382.5 566.314q-39.5-39.686-39.5-97.5t39.686-97.314q39.686-39.5 97.5-39.5t97.314 39.686q39.5 39.686 39.5 97.5T577.314 566.5q-39.686 39.5-97.5 39.5Zm.654 370Q398 976 325 944.5q-73-31.5-127.5-86t-86-127.266Q80 658.468 80 575.734T111.5 420.5q31.5-72.5 86-127t127.266-86q72.766-31.5 155.5-31.5T635.5 207.5q72.5 31.5 127 86t86 127.032q31.5 72.532 31.5 155T848.5 731q-31.5 73-86 127.5t-127.032 86q-72.532 31.5-155 31.5ZM480 916q55 0 107.5-16T691 844q-51-36-104-55t-107-19q-54 0-107 19t-104 55q51 40 103.5 56T480 916Zm0-370q34 0 55.5-21.5T557 469q0-34-21.5-55.5T480 392q-34 0-55.5 21.5T403 469q0 34 21.5 55.5T480 546Zm0-77Zm0 374Z"/>
+      </symbol>
+      <symbol id="icon-home" viewBox="0 96 960 960">
+        <path d="M220 876h150V626h220v250h150V486L480 291 220 486v390Zm-60 60V456l320-240 320 240v480H530V686H430v250H160Zm320-353Z"/>
+      </symbol>
+      <symbol id="icon-city" viewBox="0 96 960 960">
+        <path d="M120 936V378h247v-92l113-110 113 110v258h247v392H120Zm60-60h106V770H180v106Zm0-166h106V604H180v106Zm0-166h106V438H180v106Zm247 332h106V770H427v106Zm0-166h106V604H427v106Zm0-166h106V438H427v106Zm0-166h106V272H427v106Zm247 498h106V770H674v106Zm0-166h106V604H674v106Z"/>
+      </symbol>
+      <symbol id="icon-globe" viewBox="0 96 960 960">
+        <path d="M480 976q-83 0-156-31.5T197 859q-54-54-85.5-127T80 576q0-83 31.5-156T197 293q54-54 127-85.5T480 176q83 0 156 31.5T763 293q54 54 85.5 127T880 576q0 83-31.5 156T763 859q-54 54-127 85.5T480 976Zm-43-61v-82q-35 0-59-26t-24-61v-44L149 497q-5 20-7 39.5t-2 39.5q0 130 84.5 227T437 915Zm294-108q22-24 38.5-51t28-56.5q11.5-29.5 17-60.5t5.5-63q0-106-58-192.5T607 257v18q0 35-24 61t-59 26h-87v87q0 17-13.5 28T393 488h-83v88h258q17 0 28 13t11 30v127h43q29 0 51 17t30 44Z"/>
+      </symbol>
+      <symbol id="icon-postal-code" viewBox="0 96 960 960">
+        <path d="M240 639V476H140v440h680V476H360v-60h460q24 0 42 18t18 42v440q0 24-18 42t-42 18H140q-24 0-42-18t-18-42V476q0-24 18-42t42-18h100V176h300v145H300v318h-60ZM140 476v187-187 440-440Z"/>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 96 960 960">
+        <path d="M450 856V606H200v-60h250V296h60v250h250v60H510v250h-60Z"/>
+      </symbol>
+      <symbol id="icon-minus" viewBox="0 96 960 960">
+        <path d="M200 606v-60h560v60H200Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Checkout</h1>
+      <p class="page-header__note">Front-end demo — nothing is charged and no data leaves your browser.</p>
+    </header>
+
+    <div class="checkout">
+      <aside class="checkout__summary" aria-labelledby="summary-heading">
+        <div class="summary" data-cart data-shipping="19">
+          <h2 class="summary__title" id="summary-heading">Order summary</h2>
+
+          <ul class="summary__items">
+            <li class="product" data-product data-price="54.99">
+              <img class="product__image" src="assets/img/content/product-canvas-backpack.webp"
+                   width="269" height="273" decoding="async"
+                   alt="Waxed canvas backpack in dark green with brown leather straps and buckles">
+              <div>
+                <h3 class="product__name">Vintage Backpack</h3>
+                <p class="product__pricing">
+                  <span class="product__price">$54.99</span>
+                  <span class="product__price-was">$94.99</span>
+                </p>
+                <div class="quantity">
+                  <button class="quantity__button" type="button" data-quantity-step="-1"
+                          aria-label="Decrease quantity of Vintage Backpack">
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>
+                  </button>
+                  <span class="quantity__value" data-quantity-value aria-live="polite">1</span>
+                  <button class="quantity__button" type="button" data-quantity-step="1"
+                          aria-label="Increase quantity of Vintage Backpack">
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+            <li class="product" data-product data-price="54.99">
+              <img class="product__image" src="assets/img/content/product-canvas-sneakers.webp"
+                   width="269" height="273" decoding="async"
+                   alt="Navy canvas low-top sneakers, one upright and one turned to show the sole">
+              <div>
+                <h3 class="product__name">Canvas Sneakers</h3>
+                <p class="product__pricing">
+                  <span class="product__price">$54.99</span>
+                  <span class="product__price-was">$94.99</span>
+                </p>
+                <div class="quantity">
+                  <button class="quantity__button" type="button" data-quantity-step="-1"
+                          aria-label="Decrease quantity of Canvas Sneakers">
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-minus"></use></svg>
+                  </button>
+                  <span class="quantity__value" data-quantity-value aria-live="polite">1</span>
+                  <button class="quantity__button" type="button" data-quantity-step="1"
+                          aria-label="Increase quantity of Canvas Sneakers">
+                    <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-plus"></use></svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="totals" aria-live="polite">
+            <p class="totals__row">
+              <span>Subtotal</span>
+              <span class="totals__value" data-total="subtotal">$109.98</span>
+            </p>
+            <p class="totals__row">
+              <span>Shipping</span>
+              <span class="totals__value" data-total="shipping">$19.00</span>
+            </p>
+            <p class="totals__row totals__row--grand">
+              <span>Total</span>
+              <span class="totals__value" data-total="grand">$128.98</span>
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <section class="checkout__form" aria-labelledby="form-heading">
+        <h2 class="visually-hidden" id="form-heading">Your details</h2>
+
+        <form id="checkout-form" data-checkout-form novalidate>
+          <fieldset class="form-section">
+            <legend class="form-section__title">Contact information</legend>
+
+            <div class="field">
+              <label class="field__label" for="email">E-mail</label>
+              <div class="field__control">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-mail"></use></svg>
+                <input class="field__input" id="email" name="email" type="email" inputmode="email"
+                       autocomplete="email" placeholder="Enter your email" required>
+              </div>
+              <p class="field__error" id="email-error" data-error>Enter a complete email address, including the @ and a domain.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="phone">Phone</label>
+              <div class="field__control">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-phone"></use></svg>
+                <input class="field__input" id="phone" name="phone" type="tel" inputmode="tel"
+                       autocomplete="tel" placeholder="Enter your phone number"
+                       pattern="[0-9+\(\)\-\s]{7,20}" required>
+              </div>
+              <p class="field__error" id="phone-error" data-error>Enter 7 to 20 digits. Spaces, dashes, brackets and a leading + are allowed.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend class="form-section__title">Shipping address</legend>
+
+            <div class="field">
+              <label class="field__label" for="full-name">Full name</label>
+              <div class="field__control">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-user"></use></svg>
+                <input class="field__input" id="full-name" name="full-name" type="text"
+                       autocomplete="name" placeholder="Enter your full name" minlength="2" required>
+              </div>
+              <p class="field__error" id="full-name-error" data-error>Enter the name the order should be addressed to.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="address">Address</label>
+              <div class="field__control">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-home"></use></svg>
+                <input class="field__input" id="address" name="address" type="text"
+                       autocomplete="street-address" placeholder="Street and number" minlength="5" required>
+              </div>
+              <p class="field__error" id="address-error" data-error>Enter the street and number, at least 5 characters.</p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="city">City</label>
+              <div class="field__control">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-city"></use></svg>
+                <input class="field__input" id="city" name="city" type="text"
+                       autocomplete="address-level2" placeholder="Enter your city" minlength="2" required>
+              </div>
+              <p class="field__error" id="city-error" data-error>Enter the city the order ships to.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label class="field__label" for="country">Country</label>
+                <div class="field__control">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-globe"></use></svg>
+                  <input class="field__input" id="country" name="country" type="text"
+                         autocomplete="country-name" placeholder="Enter your country" minlength="2" required>
+                </div>
+                <p class="field__error" id="country-error" data-error>Enter the destination country.</p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="postal-code">Postal code</label>
+                <div class="field__control">
+                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-postal-code"></use></svg>
+                  <input class="field__input" id="postal-code" name="postal-code" type="text"
+                         autocomplete="postal-code" placeholder="Your postal code"
+                         pattern="[A-Za-z0-9\s\-]{3,10}" required>
+                </div>
+                <p class="field__error" id="postal-code-error" data-error>Enter 3 to 10 letters or numbers.</p>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <input id="remember" name="remember" type="checkbox">
+              <label for="remember">Save this information for next time</label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Continue</button>
+          </div>
+
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Checkout Page UI — a static front-end demo. No payment is processed and no data is stored.</p>
+      <p class="site-footer__links">
+        Built by <a href="https://wib.digital" rel="noopener">wib.digital</a>
+      </p>
+    </div>
+    <p class="site-credit">
+      Built by <a href="https://wib.digital" rel="noopener">wib.digital</a> —
+      <a href="https://www.fiverr.com/pablonietop" rel="noopener">hire me on Fiverr</a>
+    </p>
+  </footer>
 </body>
 </html>
-
-
