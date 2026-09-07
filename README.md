@@ -2,7 +2,7 @@
 
 A static checkout screen — contact details, shipping address and a live order summary — built with plain HTML, CSS and JavaScript.
 
-[![Live demo](https://img.shields.io/badge/demo-checkout.wib.digital-2ea44f)](https://checkout.wib.digital)
+[![Live demo](https://img.shields.io/badge/demo-pablowib.github.io/Checkout-Page-UI-2ea44f)](https://pablowib.github.io/Checkout-Page-UI)
 [![Hire me on Fiverr](https://img.shields.io/badge/Hire%20me%20on-Fiverr-1DBF73?style=for-the-badge&logo=fiverr&logoColor=white)](https://www.fiverr.com/pablonietop)
 ![Dependencies](https://img.shields.io/badge/npm%20dependencies-0-brightgreen)
 ![Build step](https://img.shields.io/badge/build%20step-none-lightgrey)
@@ -112,7 +112,7 @@ from `data-price` on each `[data-product]` element and shipping from `data-shipp
 
 ## Deployment
 
-Deployed on Vercel at [checkout.wib.digital](https://checkout.wib.digital). Static: upload the
+Deployed on GitHub Pages at [pablowib.github.io/Checkout-Page-UI](https://pablowib.github.io/Checkout-Page-UI). Static: upload the
 repository root as-is, no build command and no output directory. All internal paths are relative
 and lowercase, so it also works from a subdirectory.
 

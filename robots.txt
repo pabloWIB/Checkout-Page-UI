@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /docs/
 
-Sitemap: https://checkout.wib.digital/sitemap.xml
+Sitemap: https://pablowib.github.io/Checkout-Page-UI/sitemap.xml
